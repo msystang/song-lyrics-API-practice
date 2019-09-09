@@ -19,6 +19,12 @@ class TrackViewController: UIViewController {
         }
     }
     
+    var searchString: String? = nil {
+        didSet {
+            tracksTableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
@@ -34,6 +40,21 @@ class TrackViewController: UIViewController {
         searchBar.delegate = self
     }
     
+    private func loadSearchData() {
+        if let searchString = searchString {
+            let trackURL = "http://api.musixmatch.com/ws/1.1/track.search?q_track_artist=\(searchString)&apikey=795786026b2e330c30c0de2bfa9c9b83"
+            TrackAPIClient.shared.getTracks(from: trackURL) { (result) in
+                DispatchQueue.main.async {
+                    switch result {
+                    case .failure(let error):
+                        print(error)
+                    case .success(let data):
+                        self.tracks = data
+                    }
+                }
+            }
+        }
+    }
 }
 
 extension TrackViewController: UITableViewDelegate {}
@@ -54,4 +75,9 @@ extension TrackViewController: UITableViewDataSource {
     }
 }
 
-extension TrackViewController: UISearchBarDelegate {}
+extension TrackViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchString = searchText
+        loadSearchData()
+    }
+}
