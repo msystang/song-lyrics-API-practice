@@ -13,6 +13,8 @@
 		EAAC4E462326E2C800B53BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAC4E452326E2C800B53BE0 /* Assets.xcassets */; };
 		EAAC4E492326E2C800B53BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAC4E472326E2C800B53BE0 /* LaunchScreen.storyboard */; };
 		EAAC4E542326E2C800B53BE0 /* song_lyrics_API_practiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC4E532326E2C800B53BE0 /* song_lyrics_API_practiceTests.swift */; };
+		EAAC4E632326EEEE00B53BE0 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC4E622326EEEE00B53BE0 /* Track.swift */; };
+		EAAC4E652326F17B00B53BE0 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC4E642326F17B00B53BE0 /* Lyrics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EAAC4E4F2326E2C800B53BE0 /* song-lyrics-API-practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "song-lyrics-API-practiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAC4E532326E2C800B53BE0 /* song_lyrics_API_practiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = song_lyrics_API_practiceTests.swift; sourceTree = "<group>"; };
 		EAAC4E552326E2C800B53BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAAC4E622326EEEE00B53BE0 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		EAAC4E642326F17B00B53BE0 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 		EAAC4E612326E2FA00B53BE0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EAAC4E622326EEEE00B53BE0 /* Track.swift */,
+				EAAC4E642326F17B00B53BE0 /* Lyrics.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,6 +235,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAC4E632326EEEE00B53BE0 /* Track.swift in Sources */,
+				EAAC4E652326F17B00B53BE0 /* Lyrics.swift in Sources */,
 				EAAC4E412326E2C700B53BE0 /* ViewController.swift in Sources */,
 				EAAC4E3F2326E2C700B53BE0 /* AppDelegate.swift in Sources */,
 			);
