@@ -23,10 +23,12 @@ struct TrackList: Codable {
 struct Track: Codable {
     let trackID: Int
     let trackName: String
+    let artistName: String
     
     private enum CodingKets: String, CodingKey {
         case trackID = "track_id"
         case trackName = "track_name"
+        case artistName = "artist_name"
     }
 }
 

@@ -9,14 +9,20 @@
 import UIKit
 
 class TrackViewController: UIViewController {
-
     
     @IBOutlet weak var tracksTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    var tracks = [Track]() {
+        didSet {
+            tracksTableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
+        configureSearchBar()
     }
     
     private func configureTableView() {
@@ -34,11 +40,17 @@ extension TrackViewController: UITableViewDelegate {}
 
 extension TrackViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return tracks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let track = tracks[indexPath.row]
+        let trackCell = tracksTableView.dequeueReusableCell(withIdentifier: "trackCell", for: indexPath)
+        
+        trackCell.textLabel?.text = track.trackName
+        trackCell.detailTextLabel?.text = track.artistName
+        
+        return trackCell
     }
 }
 
