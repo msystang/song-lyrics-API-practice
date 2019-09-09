@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EAAC4E3F2326E2C700B53BE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC4E3E2326E2C700B53BE0 /* AppDelegate.swift */; };
-		EAAC4E412326E2C700B53BE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC4E402326E2C700B53BE0 /* ViewController.swift */; };
+		EAAC4E412326E2C700B53BE0 /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAC4E402326E2C700B53BE0 /* TrackViewController.swift */; };
 		EAAC4E442326E2C700B53BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAC4E422326E2C700B53BE0 /* Main.storyboard */; };
 		EAAC4E462326E2C800B53BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAAC4E452326E2C800B53BE0 /* Assets.xcassets */; };
 		EAAC4E492326E2C800B53BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAAC4E472326E2C800B53BE0 /* LaunchScreen.storyboard */; };
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		EAAC4E3B2326E2C700B53BE0 /* song-lyrics-API-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "song-lyrics-API-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAAC4E3E2326E2C700B53BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAAC4E402326E2C700B53BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAAC4E402326E2C700B53BE0 /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		EAAC4E432326E2C700B53BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAAC4E452326E2C800B53BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAAC4E482326E2C800B53BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		EAAC4E5E2326E2D400B53BE0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EAAC4E402326E2C700B53BE0 /* ViewController.swift */,
+				EAAC4E402326E2C700B53BE0 /* TrackViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 				EAAC4E692326F41E00B53BE0 /* AppError.swift in Sources */,
 				EAAC4E6B2326F45100B53BE0 /* TrackAPIClient.swift in Sources */,
 				EAAC4E652326F17B00B53BE0 /* Lyrics.swift in Sources */,
-				EAAC4E412326E2C700B53BE0 /* ViewController.swift in Sources */,
+				EAAC4E412326E2C700B53BE0 /* TrackViewController.swift in Sources */,
 				EAAC4E3F2326E2C700B53BE0 /* AppDelegate.swift in Sources */,
 				EAAC4E6D2326FA2300B53BE0 /* LyricsAPIClient.swift in Sources */,
 			);
